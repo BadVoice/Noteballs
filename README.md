@@ -1,5 +1,31 @@
 # vue-project
 
+## Features
+
+ - Vue 3 composition style  + SFC (Single File Components) 
+ - Vite
+ - Pinia
+ - Vue Router
+
+
+## Built with 
+
+#### Dependencies
+
+|  Name | Description | |
+| :---        |    :----:   |          ---: |
+| [Vue 3](https://vuejs.org/) | Progressive JavaScript Framework | 🖖 |
+  [Pinia](https://pinia.vuejs.org/) | Vue state managment | 🖖 |
+| [vue-router](https://v3.router.vuejs.org/) | Compiler for next generation JavaScript | 🐠 |
+
+#### devDependencies 
+
+|  Name | Description | |
+| :---        |    :----:   |          ---: |
+| [Vite](https://vitejs.dev/) | ️Next Generation Frontend Tooling | 🛠️ |
+
+
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
