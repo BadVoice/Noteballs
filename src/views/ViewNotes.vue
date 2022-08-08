@@ -28,6 +28,7 @@
                 v-for="note in notes" 
                 :key='note.id' 
                 :note="note"
+                @deleteClicked="deleteNote"
             />
     </div>
 
@@ -76,4 +77,12 @@
     /* 
         delete note
     */ 
+
+    const deleteNote = idToDelete => {
+        notes.value = notes.value.filter((note) => {
+            return note.id !== idToDelete 
+        })
+    }
+
+
 </script>
