@@ -17,8 +17,8 @@
 | :---        |    :----:   |          ---: |
 | [Vue 3](https://vuejs.org/) | Progressive JavaScript Framework | 🖖 |
   [Pinia](https://pinia.vuejs.org/) | ️Centralized State Management for Vue.js | 🗃️ |
-  [Bulma](https://bulma.io/) | the modern CSS framework thatjust works. | 🧐 |
-| [vue-router](https://v3.router.vuejs.org/) | Official Router for Vue.js | 🎨 |
+  [Bulma](https://bulma.io/) | the modern CSS framework that just works. | 🎨 |
+| [vue-router](https://v3.router.vuejs.org/) | Official Router for Vue.js | 🧐 |
 
 #### devDependencies 
 
