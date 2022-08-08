@@ -7,7 +7,7 @@
         
         <div class="navbar-brand">
             <div class="navbar-item is-size-4 is-family-monospace"  >
-                Noteballs
+                <img src="/src/assets/logo.svg" width="72" height="28"> Noteballs 
             </div>
 
             <a @click.prevent="showMobileNav = !showMobileNav"
