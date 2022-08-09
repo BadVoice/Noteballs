@@ -15,6 +15,7 @@
                 </button>
                 <button 
                     class="button is-white"
+                    @click="handleSaveClicked"
                     :disabled="!noteContent">
                     Accept
                 </button>
@@ -52,4 +53,14 @@
     const noteContent = ref('')
 
     noteContent.value = storeNotes.getNoteContent(route.params.id)
+
+/* 
+    save clicked
+*/
+
+    const handleSaveClicked = () => {
+        storeNotes.updateNote(route.params.id, noteContent.value)
+        
+    }
+
 </script>
