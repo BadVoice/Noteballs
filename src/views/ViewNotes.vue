@@ -1,6 +1,9 @@
 <template>
     <div class="notes">
-        <AddEditNote> 
+
+        <AddEditNote
+            v-model="newNote"
+        > 
             <template #buttons>
                 <button 
                     @click="addNote"
