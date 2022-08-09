@@ -19,6 +19,12 @@
         </tr>
       </tbody>
     </table>
+    <input 
+    v-autofocus
+    class="input is-info"
+    type="text" 
+    placeholder="Do you like noteballs ?"
+    >
   </div>
 </template>
 
@@ -27,7 +33,7 @@
     imports
   */
   import { useStoreNotes } from '@/stores/storeNotes'
-
+  import { vAutofocus } from "@/directives/vAutofocus";
   /*
     store
   */

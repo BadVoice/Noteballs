@@ -15,6 +15,7 @@
                     class="textarea"
                     :placeholder="placeholder" 
                     ref="textareaRef"
+                    v-autofocus
                     />
                 </div>
             </div>
@@ -31,6 +32,8 @@
     imports
 */
 import { ref } from "@vue/reactivity"
+import { vAutofocus } from "@/directives/vAutofocus";
+
 /* 
     props
 */
