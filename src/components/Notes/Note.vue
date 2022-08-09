@@ -29,11 +29,8 @@
 /* 
     imports 
 */
-
 import { computed } from 'vue'
 import { useStoreNotes }  from '@/stores/storeNotes'
-
-
     /* 
         props
     */
@@ -47,18 +44,14 @@ import { useStoreNotes }  from '@/stores/storeNotes'
     /* 
         store
     */
-
     const storeNotes = useStoreNotes()
-
     /* 
         character length
     */
-
     const characterLength = computed(() => {
         let length = props.note.content.length
         let description = length > 1 ? 'characters' : 'character'
         return `${ length } ${ description }`
     })
     
-
 </script>

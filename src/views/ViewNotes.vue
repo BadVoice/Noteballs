@@ -3,6 +3,7 @@
 
         <AddEditNote
             v-model="newNote"
+            placeholder="Add a new note"
             ref="addEditNoteRef"
         > 
             <template #buttons>
@@ -10,7 +11,7 @@
                     @click="addNote"
                     :disabled="!newNote"
                     class="button is-info">
-                    Add New Note
+                    Add new note
                 </button>
             </template>
         </AddEditNote>
@@ -34,18 +35,15 @@
     /* 
         store
     */
-
     const storeNotes = useStoreNotes()
     /* 
         notes
     */
     const newNote = ref('')
     const addEditNoteRef = ref(null)
-
     const addNote = () => {
         storeNotes.addNote(newNote.value)
         newNote.value = ''
         addEditNoteRef.value.focusTextarea()
     }
-
 </script>

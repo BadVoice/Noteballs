@@ -1,12 +1,19 @@
 <template>
-    <div class="card has-background-info-light p-4 mb-5">
+    <div class="card  p-4 mb-5"
+            :class="`has-background-${backgroundColor}`">
+
+            <label class="label has-text-white"
+            v-if="label"
+            >{{ label }}
+            </label>
+
             <div class="field">
                 <div class="control">
                     <textarea 
                     v-model="modelValue"
                     @input="$emit('update:modelValue', modelValue)"
                     class="textarea"
-                    placeholder="Add a new note" 
+                    :placeholder="placeholder" 
                     ref="textareaRef"
                     />
                 </div>
@@ -31,26 +38,31 @@ import { ref } from "@vue/reactivity"
         modelValue: {
             type: String,
             required: true
+        },
+        backgroundColor: {
+            type: String,
+            default: 'info-light'
+        },
+        placeholder: {
+            type: String,
+            default: 'Add new note'
+        },
+        label: {
+            type: String
         }
     })
-
 /* 
     emits
 */
-
 const emit = defineEmits(['update:modelValue'])
-
 /* 
     focus textarea
 */
     const textareaRef = ref(null)
-
     const focusTextarea = () => {
         textareaRef.value.focus()
     }
-
     defineExpose({
         focusTextarea
     })
-
 </script>
