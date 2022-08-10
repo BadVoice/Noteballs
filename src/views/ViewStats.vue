@@ -4,7 +4,7 @@
     <table class="table is-fullwidth">
       <thead>
       <tr>
-        <th>Stat</th>
+        <th>Stats</th>
         <th>Value</th>
       </tr>
       </thead>
@@ -20,6 +20,7 @@
       </tbody>
     </table>
     <input 
+    v-model="loveNoteballs"
     v-autofocus
     class="input is-info"
     type="text" 
@@ -34,12 +35,24 @@
   */
   import { useStoreNotes } from '@/stores/storeNotes'
   import { vAutofocus } from "@/directives/vAutofocus";
+  import { useWatchCharacters } from '@/use/useWatchCharacters'
+  import { ref } from '@vue/reactivity';
+
   /*
     store
   */
   const storeNotes = useStoreNotes()
+
+  /*
+    love noteballs
+  */
+
+  const loveNoteballs = ref('')
+  useWatchCharacters(loveNoteballs)
+
+
 </script>
 
-<style>
+<style> 
   
 </style>
